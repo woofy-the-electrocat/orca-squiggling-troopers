@@ -23,6 +23,9 @@ class MySuperCoolComponent extends Component {
 
 var _ = require('lodash');
 
+import './index.css';
+
+
 import Draggable from 'react-draggable';
 
 
@@ -93,10 +96,10 @@ class MySuperCoolComponent extends React.PureComponent {
 	const sliderColour = isInvalid ? "red" : (this.props.sliderColour || "rgba(0,0,0,0.5)");
 	
 	return (
-	    <div className="MySuperCoolComponent"
+	    <div className="WgInputWithSlider"
 		 onMouseEnter={()=>{this.setState({isMouseOver: true}); }}
 		 onMouseLeave={()=>{this.setState({isMouseOver: false});}}
-		 >
+	      >
 
 		<input type="text"
 		       ref={ node => { this.inputElement = node; }}
