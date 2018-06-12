@@ -1,0 +1,15 @@
+/* WgInputWithSlider.css */
+
+.WgInputWithSlider{
+    position: relative;    
+}
+
+.WgInputWithSlider input{
+    position: absolute;
+}
+
+.WgInputWithSlider svg{
+    position: absolute;
+    top: 7px;
+    z-index: 2;
+}
